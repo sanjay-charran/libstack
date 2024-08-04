@@ -21,7 +21,7 @@ OBJS = $(patsubst %,$(OBJ_DIR)/%,$(_OBJS))
 $(LIB_DIR)/libstack.a: dirs $(OBJS)
 	-ar rcs $@  $(OBJS)
 
-$(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
+$(OBJ_DIR)/%.o: $(SRC_DIR)/%.c $(DEP)
 	$(CC) -c -o $@ $< $(CFLAGS)
 
 .PHONY: lib_dir
