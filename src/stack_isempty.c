@@ -20,7 +20,7 @@
 
 #include "stack.h"
 
-bool stack_isempty(StackPtr top)
+unsigned char stack_isempty(StackPtr top)
 {
 	if (top == NULL)
 	{

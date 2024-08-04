@@ -43,9 +43,9 @@ typedef struct stack
 }Stack, *StackPtr;
 
 
-StackPtr	stack_push(StackPtr, void *);
-StackPtr	stack_pop(StackPtr, void *, unsigned char *);
-bool		stack_isempty(StackPtr);
-void		stack_deallocate(StackPtr, stack_deallocate_callback);
+StackPtr		stack_push(StackPtr, void *);
+StackPtr		stack_pop(StackPtr, void *, unsigned char *);
+unsigned char	stack_isempty(StackPtr);
+void			stack_deallocate(StackPtr, stack_deallocate_callback);
 
 #endif	/*	__STACK_H__	*/
