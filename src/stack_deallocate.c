@@ -28,7 +28,7 @@ void stack_deallocate(StackPtr top, stack_deallocate_callback cb)
 	{
 		/*	handle data deallocation via callback func	*/
 		cb(p->data);
-		free(data);
+		free(p->data);
 		
 		temp = p;
 		p = p->next;
