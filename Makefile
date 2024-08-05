@@ -5,7 +5,7 @@ LIB_DIR = ./lib
 OUT_DIR = ./bin
 
 CC = gcc
-CFLAGS = -Wall
+CFLAGS = -Wall -O3
 LINKFLAGS = -lc
 
 _DEP = stack.h
