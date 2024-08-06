@@ -4,10 +4,10 @@
 ##	Compiling the Library
 	The requirements for compiling this library is the C standard library (libc), version 2.36 of libc and C18 was used for testing.
 	The library is compiled using GNU Make (v4.3) and specifies GCC, however, this can be changed to your own choice of compiler by editing the Makefile.
-	The Makefile contains options for making the library (libstack.a) via either:
-	`make` or `make all`
+	The Makefile contains options for making the library (libstack.a) via the following  command in the project's root dir: `make`. You can build examples included with the library using `make examples`. For simplicity, you can use `make all` to build everything.
 	There also exists options for removing non-source files and dirs:
-	`make clean` for all obj and lib directories and files inside them
+	`make clean` for all bin, obj, and lib directories and files inside them
 	`make clean_obj` for just obj dir and files inside
 	`make clean_lib` for just lib dir and files inside
+	`make clean_bin` for just bin dir and files inside
 	
